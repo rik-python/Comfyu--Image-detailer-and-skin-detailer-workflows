@@ -1,0 +1,162 @@
+Flux DyPE + SRPO Skin Detailer — ComfyUI Workflow Pack
+
+This repository contains two high-quality, production-tested ComfyUI workflows designed for realistic image enhancement, micro-detail restoration, and photographic skin detailing without introducing plastic shine or crunchy artifacts.
+
+These workflows focus on handling the two areas where AI images often fall apart:
+
+Fine surface texture (fabric, hair, stone, metal, natural microdetail)
+
+Realistic human skin (pores, softness, breakup, natural imperfections)
+
+Flux DyPE and SRPO excel in their own domains — together they form a powerful, VFX-grade detail enhancement toolkit.
+
+🔥 Workflows Included
+1. Flux DyPE + Upscale — Detail Enhancement Workflow
+
+A detail-focused workflow using Flux DyPE to enhance:
+
+microtexture
+
+surface breakup
+
+fine edges
+
+natural photographic detail
+
+Flux DyPE adds believable enhancement without hallucinating random shapes or “over-texturing” the image. It is ideal for:
+
+landscapes
+
+architecture
+
+clothing fabrics
+
+hair strands
+
+props and surfaces
+
+general AI images that feel too soft
+
+Output quality: 2K / 4K / 8K (tile-friendly)
+Best for: Extra realism and depth without losing the original image identity.
+
+2. SRPO Skin Detailer + Upscale — Realistic Skin Workflow
+
+SRPO is one of the most accurate models for human skin reconstruction.
+This workflow enhances:
+
+pores
+
+micro-breakup
+
+real skin texture
+
+soft falloff
+
+natural imperfections
+
+Without making the face look:
+
+plastic
+
+waxy
+
+over-sharpened
+
+overly smoothed
+
+Perfect for:
+
+portraits
+
+model shots
+
+beauty work
+
+close-ups
+
+any image where skin realism matters
+
+Output quality: 2K / 4K / 8K
+Best for: High-end skin enhancement with the most natural, non-AI look.
+
+🎯 Why These Two Models?
+
+Different AI upscalers/models excel at different tasks:
+
+Flux DyPE = best for overall microdetail
+
+SRPO = best for skin textures and facial realism
+
+Trying to use one model for everything often leads to poor results.
+These two specialized workflows give you the best outcome for their specific categories.
+
+📁 What You Get
+
+flux_dype_upscale.json — detail enhancement workflow
+
+srpo_skin_detailer.json — skin-focused enhancement workflow
+
+Pre-configured upscale nodes (tile friendly)
+
+Recommended sampling settings
+
+Clean node layout for easy customization
+
+Just drag & drop into ComfyUI.
+
+🧩 How to Use
+
+Download the JSON workflows from this repo.
+
+Drag them directly into ComfyUI.
+
+Load your input image.
+
+Adjust:
+
+denoise strength
+
+upscale size
+
+prompt (optional)
+
+Render.
+
+Both workflows are designed to work immediately without extra tuning.
+
+⚙️ Recommended Settings
+Flux DyPE
+
+Denoise: 0.20–0.35
+
+Tile size: 1024–1536
+
+Best after a light pre-upscale or SDXL refinement
+
+SRPO Skin Detailer
+
+Denoise: 0.10–0.20
+
+Avoid over-sharpening
+
+Use mask control for selective skin detail
+
+📌 Notes for Best Results
+
+Don’t apply both models to the entire image at once.
+
+For portraits:
+
+Use SRPO for skin
+
+Use Flux DyPE for clothing, hair, background
+
+Keep sharpening subtle — realism comes from balance, not maximum sharpness.
+
+Avoid 8x upscales in a single pass. Use 2x or 4x chained for stability.
+
+📜 License
+
+These workflows are free for personal and commercial use.
+Model licenses belong to their respective creators.
